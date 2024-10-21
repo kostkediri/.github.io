@@ -1,26 +1,69 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kost-Kostan</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kost-Kediri</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
+  <div class="wrapper">
+    <input type="radio" name="slider" id="tab-1">
+    <input type="radio" name="slider" id="tab-2" checked>
+    <input type="radio" name="slider" id="tab-3">
     <header>
-        <h1>Kost-Kostan Kediri</h1>
+      <label for="tab-1" class="tab-1">Basic</label>
+      <label for="tab-2" class="tab-2">Standard</label>
+      <label for="tab-3" class="tab-3">Team</label>
+      <div class="slider"></div>
     </header>
-    <main>
-        <section class="content">
-            <h2>Selamat Datang di Kost-Kostan Kami!</h2>
-            <p>Kami menyediakan kamar yang nyaman dan harga terjangkau di lokasi strategis.</p>
-            <button id="contactBtn">Pesan Sekarang</button>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 tutorialdevk.com. Semua Hak Dilindungi.</p>
-    </footer>
+    <div class="card-area">
+      <div class="cards">
+        <div class="row row-1">
+          <div class="price-details">
+            <span class="price">350.000</span>
+            <p>Satu Orang</p>
+          </div>
+          <ul class="features">
+            <li><i class="fas fa-check"></i><span>Lingkungan aman dan strategis</span></li>
+            <li><i class="fas fa-check"></i><span>Wi-Fi gratis</span></li>
+            <li><i class="fas fa-check"></i><span>Komunitas seru dengan berbagai kegiatan</span></li>
+            <li><i class="fas fa-check"></i><span>CCTV Keamanan</span></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="price-details">
+            <span class="price">500.000</span>
+            <p>Dua Orang</p>
+          </div>
+          <ul class="features">
+            <li><i class="fas fa-check"></i><span>Lingkungan aman dan strategis</span></li>
+            <li><i class="fas fa-check"></i><span>Wi-Fi gratis</span></li>
+            <li><i class="fas fa-check"></i><span>Komunitas seru dengan berbagai kegiatan</span></li>
+            <li><i class="fas fa-check"></i><span>CCTV Keamanan</span></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="price-details">
+            <span class="price">500.000</span>
+            <p>For team collaboration</p>
+          </div>
+          <ul class="features">
+            <li><i class="fas fa-check"></i><span>Lingkungan aman dan strategis</span></li>
+            <li><i class="fas fa-check"></i><span>Wi-Fi gratis</span></li>
+            <li><i class="fas fa-check"></i><span>Komunitas seru dengan berbagai kegiatan</span></li>
+            <li><i class="fas fa-check"></i><span>CCTV Keamanan</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <button id="contactBtn">Choose plan</button>
+  </div>
+  <footer>
+    <p>www.tutorialdevk.com &copy; 2024</p>
+  </footer>
+  <script src="script.js"></script>
 
-    <script src="script.js"></script>
 </body>
 </html>
